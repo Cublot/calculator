@@ -8,29 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="cal-contain">
-        <main class="cal-body">
-            <input type="text" class="div">
-    <button class="">1</button>
-    <button class="">2</button>
-    <button class="">3</button>
-    <button class="">4</button>
-    <button class="">5</button>
-    <button class="">6</button>
-    <button class="">7</butFton>
-    <button class="">8</button>
-    <button class="">9</button>
-    <button class="">10</button>                        
-    <button class="">11</button>                        
-    <button class="">12</button>                        
-    <button class="">13</button>                        
-    <button class="">14</button>                        
-    <button class="">15</button>                        
-    <button class="">16</button>                        
-    <button class="">17</button>                        
-    <button class="">18</button>                        
-    <button class="">19</button>
-</main> 
-</section>                       
+    <section class="cal__container">
+        <main class="cal__body">
+            <div class="input__div">
+                <input type="text" class="input" name="answer">
+            </div>
+            <form class="form" name="calculator">
+                <input type="button" value="A C" onclick="calculator.answer.value = ''" class="ac">
+                <input type="button" value="\" class="ac">
+                <input type="button" value="%" class="ac">
+                <input type="button" value="÷" class="sign">
+                <input type="button" value="7" onclick="calculator.answer.value += '7'" class="ac color">
+                <input type="button" value="8" class="ac color">
+                <input type="button" value="9" class="ac color">
+                <input type="button" value="×" class="sign">
+                <input type="button" value="4" class="ac color">
+                <input type="button" value="5" class="ac color">
+                <input type="button" value="6" class="ac color">
+                <input type="button" value="-" class="sign">
+                <input type="button" value="1" class="ac color">
+                <input type="button" value="2" class="ac color">
+                <input type="button" value="3" class="ac color">
+                <input type="button" value="+" class="sign">
+                <input type="button" value="0" class="ac color no0">
+                <input type="button" value="." class="ac color point">
+                <input type="button" value="=" class="sign orange">
+            </form>
+            <div class="line"></div>
+        </main>
+    </section>
 </body>
 </html>
